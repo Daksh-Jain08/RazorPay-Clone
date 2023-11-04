@@ -1,0 +1,41 @@
+:root{
+    --darkblue: #02042a;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    width: 70vw;
+    padding: 0 15vw;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-start{
+    justify-content: start;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.small-line{
+    width: 24px;
+    height: 4px;
+    background-color: #61cea6;
+    margin: 16px 0;
+    display: inline-block;
+}
