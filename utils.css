@@ -11,6 +11,10 @@
     flex-direction: column;
 }
 
+.grid{
+    display: grid;
+}
+
 .container{
     width: 70vw;
     padding: 0 15vw;
@@ -38,4 +42,18 @@
     background-color: #61cea6;
     margin: 16px 0;
     display: inline-block;
+}
+
+.section-2 .list-item::before{
+    content: "";
+    position: relative;
+    top: 0.5rem;
+    right: 1.5rem;
+    border: solid 2px #85dfca;
+    border-left: 0;
+    border-top: 0;
+    height: 1rem;
+    width: 0.5rem;
+    float: left;
+    transform: rotate(45deg);
 }

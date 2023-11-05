@@ -5,6 +5,7 @@
 
 :root{
     --darkblue: #02042a;
+    --lightblue: #2b84ea;
 }
 
 header>div{
@@ -72,14 +73,14 @@ nav{
 
 #login-btn{
     margin-right: 16px;
-    border: #2b84ea 2px solid;
+    border: var(--lightblue) 2px solid;
     border-radius: 0.125rem;
     background-color: var(--darkblue);
     color: white;
 }
 
 #signup-btn{
-    color:  #2b84ea;
+    color:  var(--lightblue);
     border: var(--darkblue) 2px solid;
     border-radius: 0.125rem;
 }
@@ -116,7 +117,7 @@ nav{
     text-decoration: none;
     padding: 14px 18px;
     color:  white;
-    background-color: #2b84ea;
+    background-color: var(--lightblue);
     display: inline-block;
     font-weight: 700;
     margin-top: 1rem;
@@ -159,10 +160,87 @@ nav{
 .section-2 .hero {
     margin: 64px 0;
     padding: 40px 48px;
-    border: 0.8px solid black;
+    border: 0.8px solid #818597;
+    border-radius: 0.5rem;
+}
+
+.section-2 .hero-heading{
+    font-size: 1.75rem;
+    max-width: 510px;
+}
+
+.section-2 .hero-heading span{
+    color: var(--lightblue);
 }
 
 .payment-suite-img {
     width: 0; /*auto*/
     max-width: 600px;
+}
+
+.hero-list{
+    list-style: none;
+    margin: 32px 0 0 16px;
+    padding: 16px;
+}
+
+.list-item {
+    font-size: 1rem;
+    line-height: 2.125rem;
+}
+
+.hero-btn-list{
+    padding: 2rem 0;
+}
+
+.hero-signup-btn{
+    text-decoration: none;
+    padding: 14px 18px;
+    background-color: var(--lightblue);
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    color: white;
+    border: var(--lightblue) 1px solid;
+    border-radius: 0.25rem;
+}
+
+.hero-know-more-btn{
+    text-decoration: none;
+    padding-left: 1.5rem;
+    color: var(--lightblue);
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.card-grid{
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem 2rem;
+}
+
+.card{
+    text-decoration: none;
+    padding: 1.5rem 2rem 1.25rem;
+    border: 1px solid black;
+}
+
+.card h3{
+    color: black;
+    font-size: 1.375rem;
+    font-weight: 800;
+}
+
+.card p{
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #818597;
+    font-weight: 500;
+}
+
+.card .know-more{
+    color: var(--lightblue);
+    font-weight: 700;
 }
