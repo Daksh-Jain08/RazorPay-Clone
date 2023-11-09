@@ -5,7 +5,7 @@
 
 :root{
     --darkblue: #02042a;
-    --lightblue: #2b84ea;
+    --lightblue: #0b72e7;
 }
 
 header>div{
@@ -87,6 +87,7 @@ nav{
 
 .section-1{
     background-color: var(--darkblue);
+    /* clip-path: polygon(100% 0, 100% 93%, 82% 100%, 0 83%, 0 0); */
 }
 
 .section-1 .hero-content{
@@ -149,6 +150,7 @@ nav{
 
 .section-2{
     padding-top: 16px;
+    margin-bottom: 2rem;
 }
 
 .section-2>h2{
@@ -157,7 +159,7 @@ nav{
     font-size: 1.5rem;
 }
 
-.section-2 .hero {
+.section-2 .entire-hero {
     margin: 64px 0;
     padding: 40px 48px;
     border: 0.8px solid #818597;
@@ -173,8 +175,8 @@ nav{
     color: var(--lightblue);
 }
 
-.payment-suite-img {
-    width: 0; /*auto*/
+.hero-img {
+    width: 100%;
     max-width: 600px;
 }
 
@@ -222,7 +224,9 @@ nav{
 .card{
     text-decoration: none;
     padding: 1.5rem 2rem 1.25rem;
-    border: 1px solid black;
+    border: 1px solid rgb(178, 176, 176);
+    clip-path: polygon(70% 0, 100% 30%, 100% 100%, 0 100%, 0 0);
+    border-radius: 5px;
 }
 
 .card h3{
@@ -244,3 +248,233 @@ nav{
     color: var(--lightblue);
     font-weight: 700;
 }
+
+.section-2 .last-div{
+    border: 1px solid rgb(86, 86, 230);
+    border-radius: 5px;
+    width: calc(100% - 2rem);
+    padding: 1rem;
+    font-size: 1rem;
+    margin-top: 2rem;
+    background: linear-gradient(180deg, rgba(74, 144, 245, 0.21) -34.7%, rgba(125, 186, 244, 0.063) 100%, rgba(125, 186, 244, 0.1295) 100%);
+}
+
+.last-div span{
+    font-weight: 1000;
+    margin-right: 5px;
+}
+
+.last-div a{
+    margin-left: 5px;
+    text-decoration: none;
+    color: var(--lightblue);
+    font-weight: 700;
+}
+
+.section-3{
+    padding-top: 14rem;
+    padding-bottom: 500px;
+    background-image: url(https://razorpay.com/build/browser/static/x-dark-bg.0bc3bc00.svg);
+    background-size: calc(2 * 100%) 100%;
+    position: relative;
+    background-color: 800px 0px;
+    color: white;
+    clip: none;
+}
+
+.section-3>h2{
+    font-weight: 800;
+    line-height: 1.2;
+    font-size: 1.5rem;
+}
+
+.section-3 .entire-hero {
+    margin: 64px 0;
+    padding: 40px 48px;
+    border: 0.8px solid #818597;
+    border-radius: 0.5rem;
+}
+
+.section-3 .hero{
+    min-width: 47%;
+    min-width: 47%;
+}
+
+.section-3 .hero-heading{
+    font-size: 1.75rem;
+    max-width: 510px;
+}
+
+.hero-list{
+    list-style: none;
+    margin: 32px 0 0 16px;
+    padding: 16px;
+}
+
+.list-item {
+    font-size: 1rem;
+    line-height: 2.125rem;
+}
+
+.hero-btn-list{
+    padding: 2rem 0;
+}
+
+.hero-btn-list div{
+    position: absolute;
+    width: 3rem;
+    background-color: #61cea6;
+    transform: skew(20deg);
+    height: 3.5rem;
+}
+
+.hero-signup-btn{
+    text-decoration: none;
+    padding: 14px 18px;
+    background-color: var(--lightblue);
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    color: white;
+    border: var(--lightblue) 1px solid;
+    border-radius: 0.25rem;
+}
+
+.hero-know-more-btn{
+    text-decoration: none;
+    padding-left: 1.5rem;
+    color: var(--lightblue);
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.card-grid{
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem 2rem;
+}
+
+.section-3 .card h3{
+    color: white;
+    font-size: 1.375rem;
+    font-weight: 800;
+}
+
+.card p{
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #818597;
+    font-weight: 500;
+}
+
+.section-3 .last-div{
+    border: 1px solid rgb(86, 86, 230);
+    border-radius: 5px;
+    width: calc(100% - 2rem);
+    padding: 3rem 1rem 3rem 1rem;
+    font-size: 20px;
+    margin-top: 2rem;
+}
+
+.section-3 .last-div *{
+    margin-right: 10px;
+}
+
+.section-3 .last-div button{
+    background-color: var(--lightblue);
+    padding: 1rem;
+    border: 1px solid var(--lightblue);
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 800;
+    color: white;
+}
+
+.section-4 h2 span{
+    color: var(--lightblue);
+}
+
+.card-grid-4{
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1rem 1rem;
+}
+
+.card-4{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px;
+    text-decoration: none;
+    padding: 3rem;
+    border-radius: 5px;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
+.card-4 h3{
+    color: black;
+    font-size: 1.375rem;
+    font-weight: 800;
+    margin-top: 1rem;
+}
+
+.card-4 p{
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #818597;
+    font-weight: 500;
+}
+
+.card-4 .know-more{
+    color: var(--lightblue);
+    font-weight: 700;
+}
+
+.section-4 .card-grid-4 h2{
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: #02042a;
+    line-height: 3.375rem;
+}
+
+#upi-autopay img{
+    background-color: #2b84ea;
+    height: 40px;
+    width: 40px;
+    border-radius: 9999px;
+}
+
+.section-5{
+    background-image: url(https://razorpay.com/build/browser/static/features-bg.61935438.svg);
+    padding-top: 12rem;
+    padding-bottom: 8rem;
+    color: white;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.section-5>div>p{
+    max-width: 450px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.card-grid-5{
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,4fr);
+}
+
+.section-5 .card-5{
+    max-width: 360px;
+    text-decoration: none;
+    padding: 1.5rem 2rem 1.25rem;
+    border-radius: 5px;
+}
+
+.card-5>h3{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
