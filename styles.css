@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 :root{
@@ -73,7 +74,7 @@ nav{
 
 #login-btn{
     margin-right: 16px;
-    border: var(--lightblue) 2px solid;
+    border: var(--lightblue) 1px solid;
     border-radius: 0.125rem;
     background-color: var(--darkblue);
     color: white;
@@ -82,12 +83,11 @@ nav{
 #signup-btn{
     color:  var(--lightblue);
     border: var(--darkblue) 2px solid;
-    border-radius: 0.125rem;
+    border-radius: 0.25rem;
 }
 
 .section-1{
     background-color: var(--darkblue);
-    /* clip-path: polygon(100% 0, 100% 93%, 82% 100%, 0 83%, 0 0); */
 }
 
 .section-1 .hero-content{
@@ -98,7 +98,7 @@ nav{
 .section-1 .hero-heading{
     color: white;
     line-height: 1.2;
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     font-weight: 800;
     margin-bottom: 16px;
 }
@@ -260,7 +260,7 @@ nav{
 }
 
 .last-div span{
-    font-weight: 1000;
+    font-weight: 700;
     margin-right: 5px;
 }
 
@@ -269,6 +269,33 @@ nav{
     text-decoration: none;
     color: var(--lightblue);
     font-weight: 700;
+}
+
+.section-2-navbar{
+    position: fixed;
+    display: flex;
+    height: 64px;
+    top: 0;
+    left: 0;
+    display: none;
+    background-image: url(https://razorpay.com/build/browser/static/RZPnavbarstickyweb.216a6664.svg);
+}
+
+.section-2-navbar svg{
+    height: 40%;
+    width: 125px;
+    padding: 28px 22px 28px 0;
+}
+
+.section-2-navbar button{
+    height: 40%;
+    background-color: var(--lightblue);
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    border: solid var(--lightblue) 1px;
+    border-radius: 5px;
 }
 
 .section-3{
@@ -321,16 +348,18 @@ nav{
 }
 
 .hero-btn-list div{
-    position: absolute;
-    width: 3rem;
+    position: relative;
+    width: 1.5rem;
+    padding: 0 0.75rem;
     background-color: #61cea6;
     transform: skew(20deg);
     height: 3.5rem;
+    right: 75px;
 }
 
 .hero-signup-btn{
     text-decoration: none;
-    padding: 14px 18px;
+    padding: 14px 90px 14px 18px;
     background-color: var(--lightblue);
     font-size: 1rem;
     font-weight: 700;
@@ -354,6 +383,27 @@ nav{
     grid-gap: 2rem 2rem;
 }
 
+.section-3 .card-grid svg{
+    background-color: #2b84ea;
+    position: absolute;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 9999px;
+}
+
+.section-3 #first {
+    left: 500px;
+}
+
+.section-3 #second{
+    left: 875px;
+}
+
+
+.section-3 #third{
+    left: 1250px;
+}
+
 .section-3 .card h3{
     color: white;
     font-size: 1.375rem;
@@ -373,9 +423,19 @@ nav{
     border: 1px solid rgb(86, 86, 230);
     border-radius: 5px;
     width: calc(100% - 2rem);
-    padding: 3rem 1rem 3rem 1rem;
+    padding: 2rem 1rem;
     font-size: 20px;
     margin-top: 2rem;
+}
+
+.section-3 .last-div .green {
+    position: relative;
+    width: 2rem;
+    padding: 0 0.5rem;
+    background-color: #61cea6;
+    transform: skew(20deg);
+    height: 3.75rem;
+    right: 87px;
 }
 
 .section-3 .last-div *{
@@ -384,12 +444,39 @@ nav{
 
 .section-3 .last-div button{
     background-color: var(--lightblue);
-    padding: 1rem;
+    padding: 1rem 90px 1rem 1rem;
     border: 1px solid var(--lightblue);
     border-radius: 5px;
     font-size: 16px;
     font-weight: 800;
     color: white;
+}
+
+.section-3-navbar{
+    position: fixed;
+    display: flex;
+    height: 64px;
+    top: 0;
+    left: 0;
+    display: none;
+    background-image: url(https://razorpay.com/build/browser/static/RZPnavbarstickyweb.216a6664.svg);
+}
+
+.section-3-navbar svg{
+    height: 40%;
+    width: 125px;
+    padding: 28px 22px 28px 0;
+}
+
+.section-3-navbar button{
+    height: 40%;
+    background-color: var(--lightblue);
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    border: solid var(--lightblue) 1px;
+    border-radius: 5px;
 }
 
 .section-4 h2 span{

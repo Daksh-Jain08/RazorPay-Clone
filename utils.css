@@ -58,3 +58,15 @@
     float: left;
     transform: rotate(45deg);
 }
+
+.section-2:hover{
+    .section-2-navbar{
+        display: flex;
+    }
+}
+
+.section-3:hover{
+    .section-3-navbar{
+        display: flex;
+    }
+}
