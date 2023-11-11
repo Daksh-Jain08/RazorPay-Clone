@@ -224,9 +224,56 @@ nav{
 .card{
     text-decoration: none;
     padding: 1.5rem 2rem 1.25rem;
-    border: 1px solid rgb(178, 176, 176);
     clip-path: polygon(70% 0, 100% 30%, 100% 100%, 0 100%, 0 0);
-    border-radius: 5px;
+}
+
+.section-2 .card-shape{
+    position: absolute;
+    height: 218px;
+    width: 340px;
+    stroke: hsla(229, 9.6%, 54.9%, 1);
+    stroke-opacity: 0.15;
+    cursor: pointer;
+}
+
+#two,#five{
+    left: 613px;
+}
+
+#three,#six{
+    left: 975px;
+}
+
+#four,#five,#six{
+    top: 1908px;
+}
+
+.card-grid .card-icon{
+    background-color: #2b84ea;
+    position: absolute;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 9999px;
+}
+
+.section-2 #first,#second,#third{
+    top: 1664px;
+}
+
+.section-2 #first,#fourth{
+    left: 514px;
+}
+
+.section-2 #second,#fifth{
+    left:890px
+}
+
+.section-2 #third,#sixth{
+    left: 1256px;
+}
+
+.section-2 #fourth,#fifth,#sixth{
+    top: 1914px;
 }
 
 .card h3{
@@ -383,25 +430,29 @@ nav{
     grid-gap: 2rem 2rem;
 }
 
-.section-3 .card-grid svg{
-    background-color: #2b84ea;
+.section-3 .card-shape{
     position: absolute;
-    height: 3rem;
-    width: 3rem;
-    border-radius: 9999px;
+    height: 218px;
+    width: 340px;
+    stroke: #525a76;
+    stroke-opacity: 0.8;
+    cursor: pointer;
 }
 
 .section-3 #first {
-    left: 500px;
+    left: 516px;
+    top: 950px;
 }
 
 .section-3 #second{
-    left: 875px;
+    left: 894px;
+    top: 947px;
 }
 
 
 .section-3 #third{
-    left: 1250px;
+    left: 1257px;
+    top: 950px;
 }
 
 .section-3 .card h3{
