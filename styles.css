@@ -228,10 +228,6 @@ nav{
     background: url(./card-shape-white.svg);
 }
 
-.section-3 .card{
-    background: url(./card-shape-blue.svg) !important;
-}
-
 .card-grid .card-icon{
     background-color: #2b84ea;
     position: absolute;
@@ -397,9 +393,12 @@ nav{
     font-size: 1rem;
 }
 
-.card-grid{
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 2rem 2rem;
+.section-3 .card{
+    background: url(./card-shape-blue.svg) !important;
+}
+
+.section-3 .card-icon{
+    z-index: 0;
 }
 
 .section-3 .card h3{
