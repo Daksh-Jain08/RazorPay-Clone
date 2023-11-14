@@ -222,58 +222,25 @@ nav{
 }
 
 .card{
+    position: relative;
     text-decoration: none;
     padding: 1.5rem 2rem 1.25rem;
-    clip-path: polygon(70% 0, 100% 30%, 100% 100%, 0 100%, 0 0);
+    background: url(./card-shape-white.svg);
 }
 
-.section-2 .card-shape{
-    position: absolute;
-    height: 218px;
-    width: 340px;
-    stroke: hsla(229, 9.6%, 54.9%, 1);
-    stroke-opacity: 0.15;
-    cursor: pointer;
-}
-
-#two,#five{
-    left: 613px;
-}
-
-#three,#six{
-    left: 975px;
-}
-
-#four,#five,#six{
-    top: 1908px;
+.section-3 .card{
+    background: url(./card-shape-blue.svg) !important;
 }
 
 .card-grid .card-icon{
     background-color: #2b84ea;
     position: absolute;
-    height: 3rem;
-    width: 3rem;
+    height: 3.5rem;
+    width: 3.5rem;
     border-radius: 9999px;
-}
-
-.section-2 #first,#second,#third{
-    top: 1664px;
-}
-
-.section-2 #first,#fourth{
-    left: 514px;
-}
-
-.section-2 #second,#fifth{
-    left:890px
-}
-
-.section-2 #third,#sixth{
-    left: 1256px;
-}
-
-.section-2 #fourth,#fifth,#sixth{
-    top: 1914px;
+    left: 281px;
+    top: 3px;
+    z-index: -1;
 }
 
 .card h3{
@@ -404,6 +371,11 @@ nav{
     right: 75px;
 }
 
+.green svg{
+    transform: skew(-20deg);
+    margin-left: 5px;
+}
+
 .hero-signup-btn{
     text-decoration: none;
     padding: 14px 90px 14px 18px;
@@ -428,31 +400,6 @@ nav{
 .card-grid{
     grid-template-columns: repeat(3,1fr);
     grid-gap: 2rem 2rem;
-}
-
-.section-3 .card-shape{
-    position: absolute;
-    height: 218px;
-    width: 340px;
-    stroke: #525a76;
-    stroke-opacity: 0.8;
-    cursor: pointer;
-}
-
-.section-3 #first {
-    left: 516px;
-    top: 950px;
-}
-
-.section-3 #second{
-    left: 894px;
-    top: 947px;
-}
-
-
-.section-3 #third{
-    left: 1257px;
-    top: 950px;
 }
 
 .section-3 .card h3{
